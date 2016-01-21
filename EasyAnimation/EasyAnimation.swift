@@ -138,9 +138,9 @@ extension UIView {
         method_exchangeImplementations(
             class_getClassMethod(self, Selector("animateWithDuration:animations:completion:")),
             class_getClassMethod(self, Selector("EA_animateWithDuration:animations:completion:")))
-        method_exchangeImplementations(
-            class_getClassMethod(self, Selector("animateWithDuration:delay:options:animations:completion:")),
-            class_getClassMethod(self, Selector("EA_animateWithDuration:delay:options:animations:completion:")))
+//        method_exchangeImplementations(
+//            class_getClassMethod(self, Selector("animateWithDuration:delay:options:animations:completion:")),
+//            class_getClassMethod(self, Selector("EA_animateWithDuration:delay:options:animations:completion:")))
         method_exchangeImplementations(
             class_getClassMethod(self, Selector("animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:")),
             class_getClassMethod(self, Selector("EA_animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:")))
